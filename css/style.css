@@ -1,10 +1,15 @@
 /* variable color */
 :root{
-  --color-praimary : #2584ff;
+  --color-primary : #2584ff;
   --color-secondary : #00d9ff;
   --color-accent : #ff3400;
   --color-headings : #1b0760;
   --color-body: #918ca4;
+}
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
 }
 /* typhograhpy */
 html{
@@ -15,6 +20,7 @@ body{
   color: var(--color-body);
   font-size: 2.4rem;
   line-height: 1.5;
+
 }
 h1,h2,h3{
   color: var(--color-headings);
@@ -78,7 +84,7 @@ p{
   white-space: nowrap;
 }
 .badge--primary{
-  background: var(--color-praimary);
+  background: var(--color-primary);
   color: #fff;
 }
 .badge--secondary{
@@ -115,7 +121,7 @@ p{
   padding-left: 0.5rem;
   margin-bottom: 1rem;
 }
-@media screen and (min-with: 1024px){
+@media screen and (min-width: 1024px){
   .list--tick .list__item{
     padding-left: 0;
   }
@@ -127,7 +133,7 @@ p{
   height: 40px;
 }
 .icon--primary{
-  fill: var(--color-praimary)
+  fill: var(--color-primary)
 }
 .icon-container{
   background: #f3f9fa;
@@ -138,3 +144,57 @@ p{
   justify-content: center;
   align-items: center;
 } 
+
+/* Buttons */
+.btn{
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+  margin: 1rem 0;
+}
+.btn--primary{
+  background: var(--color-primary);
+  color: #fff;
+}
+.btn--primary:hover{
+  background: #3a8ffd;
+}
+.btn--secondary{
+  background: var(--color-secondary);
+  color: #fff;
+}
+.btn--secondary:hover{
+  background: #00c8eb;
+}
+.btn--accent{
+  background: var(--color-accent);
+  color: #fff;
+}
+.btn--accent:hover{
+  background: #ec3000;
+}
+.btn--block{
+  width: 100%;
+  display: inline-block;
+
+}
+.btn--outline{
+  background: #fff;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+.btn--outline:hover{
+  background: var(--color-headings);
+  color: #fff;
+}
+@media screen and (min-width: 1024px) {
+  .btn{
+    font-size: 1.5rem;
+  }
+}
