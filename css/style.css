@@ -176,6 +176,10 @@ p{
   background: var(--color-primary);
   color: #fff;
 }
+.btn--stretch{
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 .btn--primary:hover{
   background: #3a8ffd;
 }
@@ -418,3 +422,40 @@ p{
     font-size: 2.2rem;
   }
 } 
+
+/* Callout */
+.callout{
+  padding: 4rem;
+  border-radius: 4px;
+}
+.callout--primary{
+  background: var(--color-primary);
+}
+.callout__heading{
+  color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+}
+.callout .btn{
+  justify-self: center;
+  align-self: center;
+}
+a{
+  text-decoration: none;
+}
+.callout__content{
+  text-align: center;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2{
+    grid-template-columns: 1fr auto;
+  }
+  .callout__content{
+    text-align: left;
+  }
+  .callout .btn{
+    justify-self: start;
+    margin:0 2rem;
+  }
+}
