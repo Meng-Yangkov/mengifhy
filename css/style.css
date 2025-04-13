@@ -15,6 +15,7 @@
 *::before {
   box-sizing: border-box;
 }
+
 /* typhograhpy */
 html {
   font-size: 62.7%;
@@ -651,5 +652,29 @@ plans block */
 }
 .block-plans .card {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 auto6rem;
+}
+
+/* Features */
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+  margin-top: 0;
+}
+.feature:first-child {
+  margin-top: 0;
+}
+.feature__heading {
+  padding: 1rem 0;
+}
+.feature__image {
+  width: 100%;
+}
+.block__paragraph {
+  font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
