@@ -175,7 +175,7 @@ p {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
@@ -253,6 +253,7 @@ p {
   border: none;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 .input-group .btn {
   margin: 4px;
@@ -426,6 +427,7 @@ p {
 /* Testimonial */
 .testimonial {
   padding: 3rem;
+  margin-bottom: 20rem;
 }
 .testimonial__image > img {
   width: 100%;
@@ -490,6 +492,9 @@ a {
     justify-self: start;
     margin: 0 2rem;
   }
+  .callout {
+    top: -20rem;
+  }
 }
 
 /* Collapsible */
@@ -551,6 +556,7 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  position: relative;
 }
 
 /* Navigation  */
@@ -562,6 +568,7 @@ a {
   padding: 0 1rem;
   align-items: center;
 }
+
 .nav__list {
   width: 100%;
   margin: 0;
@@ -603,6 +610,9 @@ a {
   .nav__item {
     border: 0;
   }
+  .nav__logo {
+    margin-left: 26rem;
+  }
 }
 
 /* Heros */
@@ -633,8 +643,9 @@ a {
   max-width: 670px;
 }
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   font-size: 2rem;
